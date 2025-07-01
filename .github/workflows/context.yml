@@ -1,10 +1,10 @@
 name: Context Examples
 
-on: ['push']
+on: 
 
 jobs: 
   my-context:
-      runs-on: ubunto-latest
+      runs-on: ubuntu-latest
       steps:
         - name: "My Step"
           run: | 
