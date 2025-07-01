@@ -7,9 +7,9 @@ jobs:
       runs-on: ubunto-latest
       steps:
         - name: "My Step"
-          run: echo "Hello! $MY_ACTION"
-        - name: "My actor"
-          run: echo "I am MY_ACTOR"
+          run: | 
+            echo "Action! $MY_ACTION"
+            echo "Actor! $MY_ACTOR"
           env:
             MY_ACTION: ${{ github.action }}
             MY_ACTOR: ${{ github.actor }}
